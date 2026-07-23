@@ -70,11 +70,45 @@ Concrètement :
 
 ### 3. Configurer l'environnement
 
+> ⚠️ Le fichier `.env` contient tes secrets (token du bot, clés API) : il est volontairement exclu du dépôt via `.gitignore` et n'est donc **pas fourni**. Tu dois le créer toi-même à partir de `.env.example` :
+
 ```bash
 cp .env.example .env
 ```
 
+Voici le contenu attendu (déjà présent dans `.env.example`) et le rôle de chaque variable :
+
+```dotenv
+# --- Discord ---
+DISCORD_TOKEN=
+DISCORD_CLIENT_ID=
+# Optionnel : renseigne-le pendant le dev pour un déploiement instantané des commandes slash
+# (elles n'apparaissent que sur ce serveur). Laisse vide pour un déploiement global (jusqu'à 1h).
+DEV_GUILD_ID=
+
+# --- Lavalink ---
+# Chaîne aléatoire forte, doit être identique côté bot et côté Lavalink.
+LAVALINK_PASSWORD=changeme_use_a_strong_random_password
+LAVALINK_HOST=lavalink
+LAVALINK_PORT=2333
+LAVALINK_SECURE=false
+
+# --- Spotify (API Web officielle, gratuite sur https://developer.spotify.com/dashboard) ---
+# Utilisée uniquement pour rechercher/résoudre les métadonnées (titre, artiste, playlist).
+# La lecture audio est toujours streamée depuis YouTube : l'API Spotify ne fournit jamais
+# d'audio (protection DRM).
+SPOTIFY_CLIENT_ID=
+SPOTIFY_CLIENT_SECRET=
+
+# --- Réglages par défaut du bot ---
+DEFAULT_VOLUME=80
+# IDs Discord (séparés par des virgules) autorisés à contourner les vérifications DJ partout.
+BOT_OWNER_IDS=
+```
+
 Remplis `.env` avec les valeurs récupérées ci-dessus (`DISCORD_TOKEN`, `DISCORD_CLIENT_ID`, `SPOTIFY_CLIENT_ID`, `SPOTIFY_CLIENT_SECRET`) et choisis un mot de passe fort pour `LAVALINK_PASSWORD`.
+
+Ne commite jamais ce fichier et ne le partage à personne : quiconque possède ton `DISCORD_TOKEN` peut prendre le contrôle total de ton bot.
 
 Astuce : pendant le développement, renseigne aussi `DEV_GUILD_ID` (l'ID de ton serveur Discord, clic droit sur le serveur → Copier l'ID avec le mode développeur activé) pour que les commandes slash apparaissent instantanément au lieu d'attendre jusqu'à 1h pour un déploiement global.
 
