@@ -1,0 +1,51 @@
+services:
+  lavalink:
+    image: ghcr.io/lavalink-devs/lavalink:4
+    container_name: smusicbot-lavalink
+    restart: unless-stopped
+    environment:
+      _JAVA_OPTIONS: "-Xmx1G"
+      LAVALINK_PASSWORD: ${LAVALINK_PASSWORD}
+      SPOTIFY_CLIENT_ID: ${SPOTIFY_CLIENT_ID}
+      SPOTIFY_CLIENT_SECRET: ${SPOTIFY_CLIENT_SECRET}
+    volumes:
+      - ./lavalink/application.yml:/opt/Lavalink/application.yml:ro
+      - lavalink_plugins:/opt/Lavalink/plugins
+    # Uncomment to reach Lavalink from the host for debugging (e.g. with the LavalinkMonitor app):
+    # ports:
+    #   - "2333:2333"
+    expose:
+      - "2333"
+    networks:
+      - smusicbot
+    healthcheck:
+      test: ["CMD", "wget", "-q", "--spider", "-O", "-", "--header=Authorization:${LAVALINK_PASSWORD}", "http://localhost:2333/version"]
+      interval: 10s
+      timeout: 5s
+      retries: 10
+      start_period: 30s
+
+  bot:
+    build:
+      context: ./bot
+    container_name: smusicbot
+    restart: unless-stopped
+    depends_on:
+      lavalink:
+        condition: service_healthy
+    env_file:
+      - .env
+    environment:
+      LAVALINK_HOST: lavalink
+      LAVALINK_PORT: 2333
+    volumes:
+      - ./bot/data:/app/data
+    networks:
+      - smusicbot
+
+networks:
+  smusicbot:
+    driver: bridge
+
+volumes:
+  lavalink_plugins:
