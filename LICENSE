@@ -1,0 +1,106 @@
+LICENCE LOGICIELLE PROPRIÉTAIRE — SMusicBot
+
+Copyright (c) 2026 Sébastien Blanc. Tous droits réservés.
+
+Ce logiciel, y compris l'ensemble de son code source, sa documentation, ses
+fichiers de configuration et tout élément associé (ci-après « le Logiciel »),
+est une œuvre protégée par le droit d'auteur et le droit de la propriété
+intellectuelle. Le Logiciel n'est PAS distribué sous licence open source.
+Toute personne ou entité souhaitant utiliser le Logiciel doit au préalable
+avoir obtenu une licence commerciale valide auprès de son auteur, Sébastien
+Blanc (contact : sebastienb122@gmail.com).
+
+1. DÉFINITIONS
+
+« Titulaire » désigne Sébastien Blanc, auteur et unique détenteur des droits
+de propriété intellectuelle sur le Logiciel.
+
+« Licencié » désigne toute personne physique ou morale ayant acquis auprès
+du Titulaire, contre paiement et par écrit (facture, contrat ou confirmation
+de vente), le droit d'utiliser le Logiciel dans les conditions décrites
+ci-dessous.
+
+2. OCTROI DE LICENCE
+
+Sous réserve du paiement intégral du prix convenu et du respect des
+présentes conditions, le Titulaire accorde au Licencié une licence
+d'utilisation personnelle, non exclusive, non transférable et révocable,
+lui permettant de :
+
+  a) déployer et faire fonctionner le Logiciel, tel quel ou modifié pour ses
+     besoins internes, sur les serveurs Discord et l'infrastructure
+     d'hébergement du Licencié ;
+  b) adapter la configuration et le code du Logiciel pour son propre usage,
+     à condition que cet usage reste strictement interne au Licencié.
+
+Cette licence ne constitue en aucun cas un transfert de propriété. Le
+Titulaire conserve l'intégralité des droits d'auteur et de propriété
+intellectuelle sur le Logiciel.
+
+3. RESTRICTIONS
+
+Sauf autorisation écrite préalable et expresse du Titulaire, il est
+strictement interdit à quiconque, Licencié ou non, de :
+
+  a) reproduire, copier, dupliquer ou installer le Logiciel au-delà du
+     périmètre défini dans la licence acquise ;
+  b) redistribuer, publier, partager, revendre, louer, prêter ou
+     sous-licencier le Logiciel ou toute partie de son code source, que ce
+     soit à titre gratuit ou onéreux, sous sa forme originale ou modifiée ;
+  c) mettre le Logiciel ou une version dérivée à disposition d'un tiers
+     (dépôt public ou privé partagé, marketplace, forum, plateforme de
+     partage de fichiers, etc.) ;
+  d) utiliser le Logiciel, en tout ou partie, pour développer, alimenter ou
+     commercialiser un produit ou service concurrent ;
+  e) supprimer, masquer ou altérer les mentions de copyright, la présente
+     licence ou tout avertissement de propriété figurant dans le Logiciel ;
+  f) procéder à de l'ingénierie inverse dans le but de contourner les
+     mécanismes de protection ou les restrictions de la présente licence.
+
+Toute violation de ces restrictions met immédiatement et automatiquement fin
+à la licence accordée, sans préjudice des poursuites civiles ou pénales que
+le Titulaire serait en droit d'engager.
+
+4. PROPRIÉTÉ INTELLECTUELLE
+
+Le Logiciel, son architecture, son code source et sa documentation demeurent
+la propriété exclusive du Titulaire. Aucune disposition de la présente
+licence ne saurait être interprétée comme accordant, explicitement ou
+implicitement, un quelconque droit de propriété intellectuelle autre que le
+droit d'usage limité décrit à l'article 2.
+
+5. ABSENCE DE GARANTIE
+
+LE LOGICIEL EST FOURNI « EN L'ÉTAT », SANS GARANTIE D'AUCUNE SORTE, EXPRESSE
+OU IMPLICITE, Y COMPRIS, MAIS SANS S'Y LIMITER, LES GARANTIES DE QUALITÉ
+MARCHANDE, D'ADÉQUATION À UN USAGE PARTICULIER ET D'ABSENCE DE
+CONTREFAÇON. LE TITULAIRE NE GARANTIT PAS QUE LE LOGICIEL FONCTIONNERA SANS
+INTERRUPTION NI ERREUR.
+
+6. LIMITATION DE RESPONSABILITÉ
+
+EN AUCUN CAS LE TITULAIRE NE POURRA ÊTRE TENU RESPONSABLE DE DOMMAGES
+DIRECTS, INDIRECTS, ACCESSOIRES, SPÉCIAUX OU CONSÉCUTIFS RÉSULTANT DE
+L'UTILISATION OU DE L'IMPOSSIBILITÉ D'UTILISER LE LOGICIEL, MÊME SI LE
+TITULAIRE A ÉTÉ INFORMÉ DE LA POSSIBILITÉ DE TELS DOMMAGES. LA
+RESPONSABILITÉ TOTALE DU TITULAIRE NE POURRA EN AUCUN CAS EXCÉDER LE
+MONTANT EFFECTIVEMENT PAYÉ PAR LE LICENCIÉ POUR L'ACQUISITION DE LA LICENCE.
+
+7. RÉSILIATION
+
+La présente licence prend effet à la date d'achat et demeure valable pour
+une durée indéterminée, sous réserve du respect de ses conditions. Le
+Titulaire peut résilier immédiatement la licence de tout Licencié en cas de
+violation des articles 2 ou 3, sans remboursement.
+
+8. LOI APPLICABLE ET JURIDICTION
+
+La présente licence est régie par le droit français. Tout litige relatif à
+son interprétation ou son exécution relève de la compétence exclusive des
+tribunaux français.
+
+9. CONTACT / OBTENTION D'UNE LICENCE
+
+Pour toute demande de licence commerciale, d'autorisation particulière ou
+question relative aux présentes conditions, contactez le Titulaire :
+Sébastien Blanc — sebastienb122@gmail.com
